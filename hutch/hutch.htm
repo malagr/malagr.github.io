@@ -1,6 +1,15 @@
 <!doctype html>
 <html>
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-165102926-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-165102926-1');
+</script>
+
    <meta http-equiv="content-type" content="text/html;charset=utf-8">
    <meta name="description" content="Home page of J.M.C. Hutchinson, including descriptions of biological research, publication list (with links to downloads of articles) and portraits">
    <title>J.M.C. Hutchinson</title>
@@ -19,6 +28,57 @@
     height:372px;
 }
 
+.piccap{
+    vertical-align: top;
+    display: inline-block;
+    text-align: left;
+    margin: 5px;
+}
+.caption{
+    vertical-align: top;
+    display: block;
+    font-size: small;
+}
+
+.cenimgs{
+  display: table;
+  margin: 0 auto;
+}
+
+
+.floatingleftimage{
+   float:left;
+   margin-right: 4px;
+   margin-bottom: 4px;
+}
+
+.floatingrightimage{
+   float:right;
+   margin-left: 4px;
+   margin-bottom: 4px;
+}
+.floatingrightimage .piccap{
+   float:right;
+}
+
+.textboxwithimage{
+  overflow: auto;
+}
+
+.textboxwithimage h3, h1 {
+  margin-top: 0px;
+}
+
+
+
+.container {right: 0; text-align: center; }
+.container .left, .container .center, .container .right { display: inline-block; }
+.container .left { float: left; margin-right: 5px; }
+.container .left img{vertical-align: top;}
+.container .center { margin: 0 auto; }
+.container .right { float: right; margin-left: 5px;}
+.clear { clear: both; }
+
 
 </style>
 
@@ -26,29 +86,8 @@
 </head>
 <body>
 
-<TABLE ALIGN="center" WIDTH="100%" border="0" cellpadding="0" cellspacing="0">
-<COL><COL><COL>
-  <TR VALIGN="top">
-    <TD ALIGN="left">
-
-<h1>John M.C. Hutchinson&#146;s Homepage
-</h1>
-I now work in the <a href="https://www.senckenberg.de/en/institutes/museum-of-natural-history-goerlitz/zoology/malacology/">Malacology Department</a> in the Senckenberg Museum f&#252;r Naturkunde G&#246;rlitz.
-<BR>
-<p><b>Email</b>: <IMG SRC="figs/email.bmp" ALT="[email address]" WIDTH=167 HEIGHT=13> (to confound SPAMers, you must type this in yourself)
-<br><b>Tel.</b>: (+49) (3581) 47605410
-<br><b>Address for post</b>:
-<br>Privat, Dr J.M.C. Hutchinson, Senckenberg Museum f&#252;r Naturkunde G&#246;rlitz, Am Museum 1, 02826 G&#246;rlitz, GERMANY
-<br>
-<br><a href="http://orcid.org/about">ORCID</a> number = <a href="http://orcid.org/0000-0003-3166-3045">0000-0003-3166-3045</a>
-<br><a href="https://publons.com/home/">Publons</a> record of <a href="https://publons.com/author/1186509/john-mc-hutchinson#profile">my reviewing activity</a>
-
-
-    </TD>
-    <TD>
-    </TD>
-    <TD ALIGN="center" VALIGN="top" WIDTH="364">
-
+<div class = "textboxwithimage">
+<div class = "floatingrightimage">
 
 <video width="364" height="240" autoplay onclick="this.paused ? this.play() : this.pause();">
     <source src="video/leuco.webm" type='video/webm';codecs="vp9"'>
@@ -62,62 +101,83 @@ Sorry, your browser could not read the video; webm, mp4, and ogg versions were m
 <br>
 <br>
 </video>
-<small>
-Sporocysts of <a href="https://en.wikipedia.org/wiki/Green-banded_broodsac"><i>Leuchocloridium paradoxum</i></a>
-</small>
+      <span class="caption" style="width: 364px;">Sporocysts of <a href="https://en.wikipedia.org/wiki/Green-banded_broodsac"><i>Leuchocloridium paradoxum</i></a></span>
+</div>
+
+<h1>John M.C. Hutchinson&#146;s Homepage
+</h1>
+I now work in the <a href="https://www.senckenberg.de/en/institutes/museum-of-natural-history-goerlitz/zoology/malacology/">Malacology Department</a> in the Senckenberg Museum f&#252;r Naturkunde G&#246;rlitz.
+<BR>
+<p><b>Email</b>: <IMG SRC="figs/email.bmp" ALT="[email address]" WIDTH=167 HEIGHT=13> (to confound SPAMers, you must type this in yourself)
+<br><b>Tel.</b>: (+49) (3581) 47605410
+<br><b>Address for post</b>:
+<br>Privat, Dr J.M.C. Hutchinson, Senckenberg Museum f&#252;r Naturkunde G&#246;rlitz, Am Museum 1, 02826 G&#246;rlitz, GERMANY
+<br>
+<br><a href="http://orcid.org/about">ORCID</a> number = <a href="http://orcid.org/0000-0003-3166-3045">0000-0003-3166-3045</a>
+<br><a href="https://publons.com/home/">Publons</a> record of <a href="https://publons.com/author/1186509/john-mc-hutchinson#profile">my reviewing activity</a>
+<br><a href="hutchpub/erdos.htm">Erd&#337;s Number</a> &#8804; 4
 
 
-    </TD>
-
-  </TR>
-</TABLE>
-
-<p>
+</div>
 
 <hr>
-<TABLE Width="100%">
-  <TR>
-    <TD ALIGN="left" WIDTH="20%">
+
+<div class="container">
+  <div class="left" >
       <A HREF="figs/fun_portraits.htm"><IMG SRC="figs/pencils3.jpg" ALT="[thumbnail]" WIDTH=28 HEIGHT=29>What do I look like?
       </A>
-    </TD
-    <TD WIDTH="5%">
-    </TD>
-    <TD ALIGN="center">
-Download <a href="cv_web.doc">CV</a>
-    </TD>
-    <TD WIDTH="5%">
-    </TD>
-    <TD ALIGN="right" WIDTH="15%">
-      Shortcut to <a href="#publications">PUBLICATION LIST</a>
-    </TD>
-  </TR>
-</TABLE>
-<TABLE Width="100%">
-  <TR>
-    <TD ALIGN="left" WIDTH="20%">
+  </div>
+  <div class="center">
+     Download <a href="cv_web.doc">CV</a></div>
+  <div class="right">
+     Shortcut to <a href="#publications">PUBLICATION LIST</a>
+  </div>
+  <div class="clear"></div>
+</div>
+<div class="container">
+  <div class="left">
       <a href="video/redes.htm">Interview</a> on Spanish TV
-    </TD>
-    <TD WIDTH="5%">
-    </TD>
-    <TD ALIGN="center">
-Download autobiographical newsletter <a href="figs/leibniz_gemeinschaft_menschen.pdf">article</a> (in German)
-    </TD>
-    <TD WIDTH="5%">
-    </TD>
-    <TD ALIGN="right" WIDTH="15%">
-<a href="hutchpub/erdos.htm">Erd&#337;s Number</a> &#8804; 4 
-    </TD>
-  </TR>
-</TABLE>
+  </div>
+  <div class="center">
+  </div>
+  <div class="right">
+     Download autobiographical newsletter <a href="figs/leibniz_gemeinschaft_menschen.pdf">article</a> (in German)
+  </div>
+  <div class="clear"></div>
+</div>
+
 <hr>
 
+<br>
+<div class = "textboxwithimage">
+<div class = "floatingrightimage">
+<div class = "piccap">
+<span class="caption" style="width: 354px;">Click on picture below to start/stop video (2.8 MB download)<br></span>
+<video width="380" height="354" loop onclick="this.paused ? this.play() : this.pause();">
+    <source src="video/f37.webm" type='video/webm;codecs="vp9"'>
+    <source src="video/f37.mp4" type="video/mp4">
+    <source src="video/f37.ogv" type="video/ogg">
+    <small>
+    <br>
+    <br>
+      Sorry, your browser could not read the video; webm, mp4 and ogg versions were made available.
+      <br>
+      <a href ="video/f37.mp4">Download the mp4 version</a> to play with another program.
+    <br>
+    <br>
+    </small>
+</video>
+</div>
 
-
-<TABLE ALIGN="center" WIDTH="100%" border="0" cellpadding="0" cellspacing="0">
-<COL><COL><COL>
-  <TR VALIGN="top">
-    <TD ALIGN="left">
+<br>
+<br>
+<div class = "piccap">
+<A href="figs/monster.htm">
+<span class="caption" style="width: 252px;">Click to see a real TWO-TAILED MONSTER<br></span>
+<IMG SRC="figs/monster.jpg" ALT="[Scheuchzer engraving of 2-headed monster]" WIDTH=252 HEIGHT=173>
+</A>
+</div>
+</div>
 
 <h1><a NAME="contents"></a>Table of contents</h1>
 <ul>
@@ -232,51 +292,11 @@ trials with captive shrews</a></li>
 <li>
 <a href="#portraits">Portraits</a></b></li>
 </ul>
-    </TD>
-    <TD>
-    </TD>
-    <TD ALIGN="center" VALIGN="top" WIDTH="380">
-<small>
-Click on picture below to start/stop video<br>(2.8 MB download)
-  <div>
-
-
-<video width="380" height="354" loop onclick="this.paused ? this.play() : this.pause();">
-    <source src="video/f37.webm" type='video/webm;codecs="vp9"'>
-    <source src="video/f37.mp4" type="video/mp4">
-    <source src="video/f37.ogv" type="video/ogg">
-
-<br>
-<br>
-Sorry, your browser could not read the video; webm, mp4 and ogg versions were made available.
-<br>
-<a href ="video/f37.mp4">Download the mp4 version</a> to play with another program.
-<br>
-<br>
-
-</video>
-
-
-  </div>
-</small>
-
-
-<br>
-<br>
-<br>
-<A href="figs/monster.htm">
-<small>Click to see a real<br>TWO-TAILED MONSTER<br></small>
-<IMG SRC="figs/monster.jpg" ALT="[Scheuchzer engraving of 2-headed monster]" WIDTH=252 HEIGHT=173>
-</A>
-
-
-    </TD>
-
-  </TR>
-</TABLE>
+</div>
 
 
 <hr size =4 width ="50%">
+
 <h1>
 Some past and current research projects</h1>
 
@@ -348,7 +368,7 @@ a continuous bout of song (as do animals relying on phonotaxis). Male singing
 routines accordingly adjust to emphasise and prolong the dawn chorus. The
 model provides an excellent numerical example of the Handicap Principle
 in sexual selection.
-<p>In his doctoral research <a href="https://www.cardiff.ac.uk/people/view/81297-thomas-robert>Robert Thomas</a> confirmed some predictions of these models
+<p>In his doctoral research <a href="https://www.cardiff.ac.uk/people/view/81297-thomas-robert">Robert Thomas</a> confirmed some predictions of these models
 experimentally, which inspired us to write a successful NERC grant proposal
 to refine the methods of testing. Previous tests of SDP models have simply compared predicted
 and observed routines of a whole population, whereas a much more powerful
@@ -363,23 +383,22 @@ is a general paper explaining how to test SDP models; it is aimed at empiricists
  when foraging is gradually affected by changing low light levels during twilight. 
 This also causes a dawn chorus, but also a characteristic pause as light levels plateau (see right-hand figure below). 
 SDP enables two different explanations for the dawn chorus to be incorporated in the same model and their importance compared.
-<br>
-<TABLE  ALIGN="center">
-  <TR VALIGN=top>
-    <TD ALIGN="left" WIDTH="200">
-      <A HREF="figs/dawn.htm"><IMG SRC="figs/dawn3.gif" ALT="[Theoretical dawn chorus routine]" WIDTH=185 HEIGHT=193>
-      <small>Click for enlargement and caption</small></A> 
-      </A>
-    </TD>
-    <TD ALIGN="left" WIDTH="260">
-      <A HREF="figs/dd.htm"><IMG SRC="figs/dd3.gif" ALT="[Theoretical dawn chorus routine]" WIDTH=255 HEIGHT=193>
-       <small>Click for enlargement and caption</small></A> 
-      </A>
-    </TD>
-  </TR>
-</TABLE>
-<a href="#contents">Back to Contents</a>
 
+<div class="cenimgs">
+<div class="piccap">
+<A HREF="figs/dawn.htm">
+    <IMG SRC="figs/dawn3.gif" ALT="[Theoretical dawn chorus routine]" WIDTH=185 HEIGHT=193>
+    <span class="caption">Click for enlargement and caption</span>
+</a>
+</div>
+<div class="piccap">
+<A HREF="figs/dd.htm">
+    <IMG SRC="figs/dd3.gif" ALT="[Theoretical dawn chorus routine]" WIDTH=255 HEIGHT=193>
+    <span class="caption">Click for enlargement and caption</span>
+</a>
+</div>
+</div>
+<a href="#contents">Back to Contents</a>
 
 <h3>
 <a NAME="plovers"></a><u>Brood survival in plovers</u>&#151;with <a href="https://researchportal.bath.ac.uk/en/persons/tamas-szekely">T. Sz&#233;kely</a>
@@ -388,15 +407,13 @@ Our paper (<a href="#ornhung1">Nosz&#225;ly <i>et al.</i>, 1995</a>) compared br
 My part was the statistical analysis using maximum-likelihood estimation techniques. 
 <a href="#contents">Back to Contents</a>
 
-<h3></h3>
+<p>
 <a NAME="blue"></a>
-<TABLE ALIGN="left">
-  <TR VALIGN=top>
-    <TD ALIGN="center" WIDTH="74">
+<div class = "textboxwithimage">
+<div class = "floatingleftimage">
       <A HREF="figs/blue.htm"><IMG SRC="figs/blue_thumb.jpg" ALT="[Photo of blue hole science]" WIDTH=70 HEIGHT=124>
       </A>
-    </TD>
-  <TD>
+</div>
 <h3><u>Surface ecology of blue holes</u>&#151;The Andros Project</h3>
 This was an international scientific expedition researching into the biology,
 geology and hydrology of these unusual submerged caves of the Bahamas.
@@ -406,8 +423,7 @@ diversity was salinity, which was generally too high to grant this region
 of the caves much special conservation value. My paper (<a href="#bluepaper">1998</a>) relates our
 data to the work of hydrologists and geologists on the same expedition.
 <a href="#contents">Back to Contents</a>
-  </TD>
-</TABLE>
+</div>
 
 <h3>
 <a NAME="Gambia"></a><u>Site fidelity in West African wintering migrant birds</u>&#151;with J.M.B. King</h3>
@@ -442,20 +458,20 @@ Do they show apparent foresight by avoiding cubicles next to those likely to be 
 We tested this with observations from two toilets, one men&#146;s and one women&#146;s. 
 We argue that this is a good example of the sort of spatial game that humans play all the time without much conscious thought 
 (which does not imply that the strategies are not adaptive).
-<TABLE ALIGN="center">
-  <TR VALIGN=top>
-    <TD ALIGN="left" WIDTH="305">
-      <A HREF="figs/toilet.htm"><IMG SRC="figs/toilet3.gif" ALT="[Figure of toilet experiment]" WIDTH=300 HEIGHT=163>
-      <small>Click for enlargement and caption</small>
-      </A>
-    </TD>
-    <TD ALIGN="left" WIDTH="257">
-      <A HREF="figs/toiletdata.htm"><IMG SRC="figs/toiletdata3.gif" ALT="[Graph of toilet experiment data]" WIDTH=252 HEIGHT=163>
-      <small>Click for enlargement and caption</small>
-      </A>
-    </TD>
-  </TR>
-</TABLE>
+<div class="cenimgs">
+<div class="piccap">
+<A HREF="figs/toilet.htm">
+    <IMG SRC="figs/toilet3.gif" ALT="[Figure of toilet experiment]" WIDTH=300 HEIGHT=163>
+    <span class="caption">Click for enlargement and caption</span>
+</a>
+</div>
+<div class="piccap">
+<A HREF="figs/toiletdata.htm">
+    <IMG SRC="figs/toiletdata3.gif" ALT="[Graph of toilet experiment data]" WIDTH=252 HEIGHT=163>
+    <span class="caption">Click for enlargement and caption</span>
+</a>
+</div>
+</div>
 <a href="#contents">Back to Contents</a>
 
 <h3>
@@ -487,13 +503,11 @@ and uses Monte-Carlo simulation to derive confidence intervals.
 <a NAME="carpark"></a><u>Game theory in car parking</u>&#151;with <a href="https://psych.indiana.edu/directory/faculty/todd-peter.html">Peter Todd</a> and Carola Fanselow</h3>
 What simple rules enable you to select a parking space close to your destination? Our computer simulations of simple decision rules demonstrate that the rules used by drivers affect how parked cars are distributed and thus which rules work best. By analysing the statistical structure of the environment created by good rules, we were able to explain which rules outcompeted others in an evolutionary algorithm. Published as a <a href="hutchpub/hutchabs.htm#car1">chapter</a> in a book on <i>Ecological Rationality</i>.
 <br>This was linked to a study with Peter Todd and Konstantinos Katsikopoulos using a driving simulator to study parking decisions in this context, but I suspect that that will never see the light of day!
-<TABLE  ALIGN="center">
-  <TR VALIGN=top>
-    <TD ALIGN="center" WIDTH="593">
-      <IMG SRC="figs/road_side.gif" ALT="[Figure of model car-parking environment]" WIDTH=589 HEIGHT=138>
-    </TD>
-  </TR>
-</TABLE>
+<div class="cenimgs">
+<div class="piccap">
+    <IMG SRC="figs/road_side.gif" ALT="[Figure of model car-parking environment]" WIDTH=589 HEIGHT=138>
+</div>
+</div>
 
 <h3>
 <a NAME="skylark"></a><u>Skylark song flights and dynamic games</u>&#151;with
@@ -521,38 +535,37 @@ to follow a curved trajectory, bet-hedging by initially heading between
 two rivals. For the same reason, pairs of males close together may be a
 more desirable target than one in isolation. Is this a good enough reason
 for males to aggregate?
-<TABLE ALIGN="center">
-  <TR VALIGN=top>
-    <TD ALIGN="left" WIDTH="305">
-      <A HREF="figs/taxi.htm"><IMG SRC="figs/taxi3.gif" ALT="[Figure of taxi scenario]" WIDTH=300 HEIGHT=160>
-      <small>Click for enlargement and caption</small>
-      </A>
-    </TD>
-    <TD ALIGN="left" WIDTH="295">
-      <A HREF="figs/threetarget.htm"><IMG SRC="figs/threetarget3.gif" ALT="[Figure of predictions]" WIDTH=290 HEIGHT=160>
-      <small>Click for enlargement and caption</small>
-      </A>
-    </TD>
-  </TR>
-</TABLE>
+<div class="cenimgs">
+<div class="piccap">
+<A HREF="figs/taxi.htm">
+    <IMG SRC="figs/taxi3.gif" ALT="[Figure of taxi scenario]" WIDTH=300 HEIGHT=160>
+    <span class="caption">Click for enlargement and caption</span>
+</a>
+</div>
+<div class="piccap">
+<A HREF="figs/threetarget.htm">
+    <IMG SRC="figs/threetarget3.gif" ALT="[Figure of predictions]" WIDTH=290 HEIGHT=160>
+    <span class="caption">Click for enlargement and caption</span>
+</a>
+</div>
+</div>
 This work is published (<a href="#jtb2">Hutchinson, 1999</a>), but I have failed to finish off a follow-up paper
 in which it is uncertainty in quality that causes similar effects.
 <a href="#contents">Back to Contents</a>
 
-<h3>
-<a NAME="patch"></a><u>Patch leaving behaviour in humans</u>&#151;with <a href="https://webspace.clarkson.edu/~awilke/Home.html">Andreas Wilke</a>, <a href="https://psych.indiana.edu/directory/faculty/todd-peter.html">Peter Todd</a> and Uwe Czienskowski</h3>
-<TABLE ALIGN="right">
-  <TR VALIGN=top>
-    <TD ALIGN="center" WIDTH="151">
+<p>
+<a NAME="patch"></a>
+<div class = "textboxwithimage">
+<div class = "floatingrightimage">
       <A HREF="figs/fisher.htm"><IMG SRC="figs/fisher_thumb.jpg" ALT="[Experimental screen of patch leaving experiment]" WIDTH=147 HEIGHT=101>
-      <small>Click for enlargement and caption</A></small>
+      <span class="caption" style="width: 147px;">Click for enlargement and caption</span>
       </A>
-    </TD>
-  </TR>
-</TABLE>
+</div> 
+<h3><u>Patch leaving behaviour in humans</u>&#151;with <a href="https://webspace.clarkson.edu/~awilke/Home.html">Andreas Wilke</a>, <a href="https://psych.indiana.edu/directory/faculty/todd-peter.html">Peter Todd</a> and Uwe Czienskowski</h3>
 A classic paradigm in behavioural ecology is when to switch from a deteriorating food patch to a fresh one. We examined this decision in humans using a computer game in which subjects earn money by clicking on <a href="#animbehav4">fish</a> that briefly surface in a pond. Some ponds initially have more fish than others, which can be judged from the rate at which fish appear, but caught fish are not replaced. Optimal behaviour should depend only on the number of fish caught at a pond and the time spent there, with the function depending on the distribution of fish across ponds and travel time; we proposed that humans, being extreme generalists, should alter their switching rules according to whether this distribution was aggregated or even. We found little indication for this. The main influences on when to leave were time since the last capture, the preceding interval between captures and time spent in the patch.
 <p>In everyday modern life humans often have to make decisions when to switch from one task to another. As an example we have asked subjects to make <a href="#cogsci1">words</a> from a sequence of letters, and studied whether the patch-leaving rules from behavioural ecology explain when they ask for a new sequence. Again time since the last capture and the preceding interval are important determinants of when to switch, but also involved are immediate indications of sequence quality, perhaps gauged from the commonness of the constituent letters. Contrary to optimality predictions, switching rules did not seem to depend on the variation in sequence quality.
 <a href="#contents">Back to Contents</a>
+</div>
 
 <h3>
 <a NAME="bethedge"></a>
@@ -576,21 +589,17 @@ In an earlier paper (<a href="#tree1">Hutchinson, 1996</a>), I reviewed some rec
 <h2>
 (iii) Slugs and snails</h2>
 
-<h3>
-<a NAME="design"></a><u>Design in the shell shape of a terrestrial snail,
-<i>Trichia
-hispida</i></u>&#151;D. Phil., supervisor Prof. J.D. Currey</h3>
-
-<TABLE ALIGN="right">
-  <TR VALIGN=top>
-    <TD ALIGN="center" WIDTH="204">
-      <A HREF="figs/section.htm"><IMG SRC="figs/section3.gif" ALT="[Sections of snail shells]" WIDTH=200 HEIGHT=147>
-      <small>Click for enlargement and caption</small></A> 
+<p>
+<a NAME="blue"></a>
+<div class = "textboxwithimage">
+<div class = "floatingrightimage">
+      <A HREF="figs/section.htm">
+      <IMG SRC="figs/section3.gif" ALT="[Sections of snail shells]" WIDTH=200 HEIGHT=147>
+      <span class="caption">Click for enlargement and caption</span>
       </A>
-    </TD>
-  </TR>
-</TABLE>
-
+</div> 
+<h3>
+<a NAME="design"></a><u>Design in the shell shape of a terrestrial snail, <i>Trichia hispida</i></u>&#151;D. Phil., supervisor Prof. J.D. Currey</h3>
 It is a beauty of the gastropod shell that it can be sectioned to reveal
 each developmental step in its construction. Previous models have been
 based on the isometric logarithmic spiral. My models instead followed from
@@ -606,6 +615,7 @@ strength of shells to relate it to their size, thickness, shape and colour;
 (2) quantitative genetics&#151;a statistical reanalysis of W.F.R. Weldon&#146;s classic
 1901 demonstration of stabilising selection on shell shape (<a href="#heredity1">Hutchinson, 1990b<a>). <a href="#contents">Back
 to Contents</a>
+</div>
 
 <h3>
 <a NAME="functional"></a><u>Theoretical models of functional morphology</u></h3>
@@ -639,32 +649,33 @@ The latter species has considerable scope for becoming a pest, as does
 <A href="#veliger2"><i>Derocereas invadens</i></A>, 
 whose range we have considerably extended into the Eastern USA. Most recently we have surveyed a range of 
 synanthropic habitats in the Denver region of Colorado and the Salt Lake City region of Utah.
-<TABLE ALIGN="center">
-  <TR VALIGN=top>
-    <TD ALIGN="left" WIDTH="305">
-      <A HREF="figs/boet.htm"><IMG SRC="figs/boet3.jpg" ALT="[Photo of Boettgerilla pallens]"  WIDTH=300 HEIGHT=127">
-      <small><i>B. pallens</i>: click to enlarge + caption</small>
+
+<div class="cenimgs">
+<div class="piccap">
+      <A HREF="figs/boet.htm">
+      <IMG SRC="figs/boet3.jpg" ALT="[Photo of Boettgerilla pallens]"  WIDTH=300 HEIGHT=127">
+      <span class="caption"style="width: 300px;"><i>B. pallens</i>: click to enlarge + caption<p></span>
+      <a>
+      <A HREF="figs/pano.htm">
+      <IMG SRC="figs/pano3.jpg" ALT="[Photo of Deroceras invadens]" WIDTH=300 HEIGHT=77>
+      <span class="caption" style="width: 300px;"><i>D. invadens</i>: click to enlarge + caption</span>
       </A>
-    </TD>
-    <TD ALIGN="left" ROWSPAN=2 WIDTH="191">
-      <A HREF="figs/buda.htm"><IMG SRC="figs/buda3.jpg" ALT="[Photo of Tandonia budapestensis]" WIDTH=186 HEIGHT=200>
-      <small><i>T. budapestensis</i>: click to enlarge + caption</small>
+</div>
+<div class="piccap">
+      <A HREF="figs/buda.htm">
+      <IMG SRC="figs/buda3.jpg" ALT="[Photo of Tandonia budapestensis]" WIDTH=186 HEIGHT=200>
+      <span class="caption" style="width: 186px;"><i>T. budapestensis</i>: click to enlarge + caption</span>
       </A>
-    </TD>
-    <TD ALIGN="left" ROWSPAN=2 WIDTH="100">
-      <A HREF="figs/aego.htm"><IMG SRC="figs/aego3.jpg" ALT="[Photos of Aegopinella nitidula]" WIDTH=85 HEIGHT=215>
-      <small><br><i>A. nitidula</i>: click to enlarge</small>
+</div>
+<div class="piccap">
+      <A HREF="figs/aego.htm">
+      <IMG SRC="figs/aego3.jpg" ALT="[Photos of Aegopinella nitidula]" WIDTH=85 HEIGHT=215>
+      <span class="caption" style="width: 85px;"><i>A. nitidula</i>: click to enlarge</span>
       </A>
-    </TD>
-  </TR>
-  <TR VALIGN=top>
-    <TD ALIGN="left" WIDTH="305">
-      <A HREF="figs/pano.htm"><IMG SRC="figs/pano3.jpg" ALT="[Photo of Deroceras invadens]" WIDTH=300 HEIGHT=77>
-      <small><i>D. invadens</i>: click to enlarge + caption</small>
-      </A>
-    </TD>
-  </TR>
-</TABLE>
+</div>
+</div>
+
+
 In Europe, we have extended the range of the slug 
 <i>Deroceras turcicum</i>, initially to the <A href="#fom1">Czech Republic and Slovakia</A>, 
 and later to <A href="#fom2">Poland</A>. Our paper (<A href="#fom1">Reise &amp; Hutchinson, 2001</A>) 
@@ -684,14 +695,12 @@ Following Reise's (2007) review of mating in this genus, she and I are examining
 <u>The worldwide spread of the slug <i>Deroceras invadens</i></u>&#151;with Heike Reise, Bettina Schlitt, Tereza Ko&#345;inkov&#225;, David Robinson and Gary Barker
 </h3>
 We have been working to establish which countries this species has colonised, when it was first recorded in each, and in which habitats and climates it occurs. Although we have trawled the literature thoroughly, our own collections and those of various museums have considerably extended the range, particularly in the Americas. Conversely, some museum specimens and published records have turned out to be misidentifications. This <a href="#neob1">review</a> is now published, as is work in our own backyard indicating a second <a href="#fom4">colonisation of Poland</a>. By sequencing part of the mitochondrial COI gene, we have further investigated the likely origin of this species, its routes of spread, its genetic diversity. The much greater diversity of COI, anatomy and mating behaviour in southern Italy and Sicily implies that this is its native range. This work is now <a href="#jms6">in press</a>. Our collecting trips in Italy have, as a by-product, established the range of related species such as <i>D. panormitanum</i>.
-<TABLE  ALIGN="center">
-  <TR VALIGN=top>
-    <TD ALIGN="center" WIDTH="720">
+<div class="cenimgs">
+<div class="piccap">
       <IMG SRC="figs/invadens_distribution.gif" ALT="[Distribution map of Deroceras invadens]" WIDTH=720 HEIGHT=360>
-<br><small>Slightly updated from Fig. 4 of <a href="#neob1"> Hutchinson <i>et al.</i> 2014</small>
-    </TD>
-  </TR>
-</TABLE>
+      <span class="caption">Slightly updated from Fig. 4 of <a href="#neob1"> Hutchinson <i>et al.</i> 2014</span>
+</div>
+</div>
 <a href="#contents">Back to Contents</a>
 <br>
 
@@ -747,15 +756,12 @@ On holiday in Sardinia, we came across several populations of the endemic <i>Ari
 <u>Life cycles of five syntopic species of <i>Arion</i> slugs</u>&#151;with Heike Reise & Grita Skuijen&#279;
 </h3>
 In Britain, several species of <i>Arion</i> slug may coexist at the same site. These species differ considerably in size, but do different timings of their life cycles also help them to coexist? Between 1998 and 2016, whenever I passed Leigh Delamere M4 Services I tried to sample the adjacent patch of woodland, collecting every individual seen of the five <i>Arion</i> species present. All individuals were preserved, then weighed. A sample were dissected and components of the reproductive tract weighed; the ratios of weights indicate maturity. This estimate was calibrated by rearing eggs to adulthood in captivity or keeping wild-collected individuals until they mated or laid eggs. All species were predominantly annual, with the possibility in some of a minority delaying reproduction until 18 months. Species tended to become mature at different times of year, the ordering matching the ranking of adult size. However, at each time of year species overlapped considerably in body size (except that the two largest species predominated in summer, when the other species were mostly hidden underground). Individuals maturing later were smaller (although individuals of <i>A. intermedius</i> were highly synchronised in when they became adult). Consequently adult size varies considerably within, as well as between, species (the ratios between maximum and minimum adult masses of each species are 5.9&#150;9.5, and between quartiles1.5&#150;2.8; median adult mass varied between the smallest and largest species by a factor of 54). In our <a href="#jms5">paper</a> we have compared this with intraspecific variation in adult size in other pulmonates.
-<br>
-<TABLE  ALIGN="center">
-  <TR VALIGN=top>
-    <TD ALIGN="center" WIDTH="640">
-      <IMG SRC="figs/arioncycles.gif" ALT="[Diagram of size distributions]" WIDTH=640 HEIGHT=332>
-<br><br>Within each lattice square, lengths of the five coloured bars each represent number of individuals of one <i>Arion</i> species of that size range in that month (Fig. 5 of <a href="#jms5"> Hutchinson <i>et al.</i> 2017)
-    </TD>
-  </TR>
-</TABLE>
+<div class="cenimgs">
+<div class="piccap">
+   <IMG SRC="figs/arioncycles.gif" ALT="[Diagram of size distributions]" WIDTH=640 HEIGHT=332>
+   <span class="caption" style="width: 640px;">Within each lattice square, lengths of the five coloured bars each represent number of individuals of one <i>Arion</i> species of that size range in that month (Fig. 5 of <a href="#jms5"> Hutchinson <i>et al.</i> 2017</a>)</span>
+</div>
+</div>
 <a href="#contents">Back to Contents</a>
 
 
@@ -1172,37 +1178,35 @@ J.M.C. HUTCHINSON &amp; M. BENDER (awaiting resubmision). Choice of toilet cubic
 
 <a NAME="portraits"></a>
 
-<TABLE ALIGN="center">
-  <TR VALIGN=top>
-    <TD ALIGN="center" WIDTH="272">
-      <a href="http://www.chewvalleyringingstation.co.uk">Chew Valley Ringing Station</A>, 2007
+<div class="cenimgs">
+<div class="piccap">
+      <span class="caption"><a href="http://www.chewvalleyringingstation.co.uk">Chew Valley Ringing Station</A>, 2007</span>
       <IMG SRC="figs/buzzard.jpg" ALT="[Photo, ringing at Chew]" WIDTH=268 HEIGHT=372>
-    </TD>
-     <TD ALIGN="center" WIDTH="464">
-<div id="headingtext">At my field site, 2016. <span style='color:blue'>What was I photographing?</span></div>
-<div id="imgDiv"></div>
-    </TD>
- </TR>
-</TABLE>
+</div>
+<div class="piccap">
+      <div id="headingtext"><span class="caption"style="width: 464px;">At my field site, 2016. <span style='color:blue'>What was I photographing?</span></span></div>
+      <div id="imgDiv"></div>
+</div>
+</div>
 
-<TABLE ALIGN="center">
-  <TR VALIGN=top>
-    <TD ALIGN="center" WIDTH="628">
-      <IMG SRC="figs/cambridge_feath_red.jpg" ALT="[picture]" WIDTH=623 HEIGHT=544>
-      Feeling bullish with a talk (and auroch) behind me:<br><a href="http://malacsoc.org.uk">
+<div class="cenimgs">
+<div class="piccap">
+    <IMG SRC="figs/cambridge_feath_red.jpg" ALT="[picture]" WIDTH=623 HEIGHT=544>
+    <span class="caption" style="width: 623px;>Feeling bullish with a talk (and auroch) behind me:<br><a href="http://malacsoc.org.uk">
 Malacological Society</a> meeting, University Museum of Zoology Cambridge, 2007 
-(&#169; <a href="http://malacsoc.org.uk/wp/wp-content/uploads/2014/11/14-04-17-The-Malacologist-62-Feb-2014.pdf#page=23">Bill Bailey</a>)</A>
-    </TD>
-  </TR>
-</TABLE>
+(&#169; <a href="http://malacsoc.org.uk/wp/wp-content/uploads/2014/11/14-04-17-The-Malacologist-62-Feb-2014.pdf#page=23">Bill Bailey</a>)</A></span>
+</div>
+</div>
+
 <br><br>
 
+
+<p>
 <A HREF="http://www.digits.com">
-<IMG SRC="http://counter.digits.net/wc/-d/4/-z/-f/FF0000/-b/FFFFFF/Trichia"
- ALIGN= middle WIDTH=60 HEIGHT=20 BORDER=0 HSPACE=4 VSPACE=2 
- ALT="Image of digits"></A> 
+<IMG style="vertical-align: middle;" SRC="http://counter.digits.net/wc/-d/4/-z/-f/FF0000/-b/FFFFFF/Trichia" WIDTH=60 HEIGHT=20 ALT="Image of digits"></A> 
 visitors to this page since early December 2007     
-<A HREF="http://www.digits.net/"><IMG SRC="figs/wc-03.gif" WIDTH=216 HEIGHT=23 VSPACE=2 HSPACE=4 BORDER=1 ALIGN=MIDDLE></A>
+<A HREF="http://www.digits.net/"><IMG  style="vertical-align: middle;" SRC="figs/wc-03.gif" WIDTH=216 HEIGHT=23 VSPACE=2 HSPACE=4 BORDER=1></A>
+</p>
 
 </body>
 </html>
