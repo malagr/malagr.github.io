@@ -1,4 +1,4 @@
-<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<!doctype html>
 <html>
 <head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -11,7 +11,63 @@
   gtag('config', 'UA-165102926-1');
 </script>
 
-   <meta http-equiv="content-type" content="text/html;charset=utf-8">
+<style>
+
+.piccap{
+    vertical-align: top;
+    display: inline-block;
+    text-align: left;
+    margin: 5px;
+}
+.caption{
+    vertical-align: top;
+    display: block;
+    font-size: small;
+}
+
+.cenimgs{
+  display: table;
+  margin: 0 auto;
+}
+
+.floatingleftimage{
+   float:left;
+   margin-right: 4px;
+   margin-bottom: 4px;
+}
+
+.floatingrightimage{
+   float:right;
+   margin-left: 4px;
+   margin-bottom: 4px;
+}
+.floatingrightimage .piccap{
+   float:right;
+}
+
+.textboxwithimage{
+  overflow: auto;
+}
+
+.textboxwithimage h3, h1 {
+  margin-top: 0px;
+}
+
+.container {right: 0; text-align: center; }
+.container .left, .container .center, .container .right { display: inline-block; }
+.container .left { float: left; margin-right: 5px; }
+.container .left img{vertical-align: top;}
+.container .center { margin: 0 auto; }
+.container .right { float: right; margin-left: 5px;}
+.clear { clear: both; }
+
+</style>
+
+
+
+
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="description" content="Home page of Heike Reise, including descriptions of biological research, publication list (with links to downloads of articles) and portraits">
    <title>Heike Reise</title>
 </head>
@@ -32,73 +88,55 @@ I work in the <a href="https://www.senckenberg.de/en/institutes/museum-of-natura
 
 <p>
 <hr>
-<TABLE Width="100%">
-  <TR>
-    <TD ALIGN="left">
-      Click to view portraits: <A HREF="#portraits"><IMG SRC="figs/zoo3.jpg" ALT="[thumbnail]" WIDTH=23 HEIGHT=28>
+
+<div class="container">
+  <div class="left" >
+      <A HREF="#portraits">
+      <IMG SRC="figs/zoo3.jpg" ALT="[thumbnail]" WIDTH=23 HEIGHT=28 style="margin-right: 3px;">Click to view portraits.
       </A>
-    </TD
-    <TD WIDTH="5%">
-    </TD>
-    <TD ALIGN="center">
-      Download <a href="reisecv.doc">CV</a>
-    </TD>
-    <TD WIDTH="5%">
-    </TD>
-    <TD ALIGN="right">
-      Shortcut to <a href="#publications">PUBLICATION LIST</a>
-    </TD>
-  </TR>
-</TABLE>
+  </div>
+  <div class="center">
+     Download <a href="reisecv.doc">CV</a></div>
+  <div class="right">
+     Shortcut to <a href="#publications">PUBLICATION LIST</a>
+  </div>
+  <div class="clear"></div>
+</div>
 
 <hr>
 
 <a NAME="merryvideo"></a>
-<TABLE Width="100%" border="0">
-  <TR>
-    <td>
-    </td>
-    <td colspan="3" align="center"> 
+<div class="cenimgs">
     <h3>
       A <i>Deroceras</i> Merry-go-round
     </h3>
-    </td>
-    <td>
-    </td>
-  </TR>
-  <TR VALIGN=top>
-    <TD>
-    </TD>
-    <TD ALIGN="center" WIDTH="464">
-<small>
-Click on picture below to start/stop video (1.8 Mb download)
-<br>
-</small>
-
-<video width="464" height="316" loop autoplay onclick="this.paused ? this.play() : this.pause();">
-    <source src="video/merry.webm" type='video/webm';codecs="vp9"'>
-    <source src="video/merry.mp4" type="video/mp4">
-    <source src="video/merry.ogv" type="video/ogg">
-
-<br>
-<br>
-Sorry, your browser could not read the video; mp4, ogg and flv versions were made available.
-<br>
-<a href ="video/merry.mp4">Download the mp4 version</a> to play with another program.
-<br>
-<br>
-</video>
-
-    </TD>
-    <TD WIDTH="3">
-    </TD>
-    <TD ALIGN="left" WIDTH="344">
+</div>
+<div class="cenimgs">
+<div class="piccap">
+    <span class="caption">Click on picture below to start/stop video (1.8 Mb download)</span>
+    <video width="464" height="316" loop autoplay onclick="this.paused ? this.play() : this.pause();">
+      <source src="video/merry.webm" type='video/webm';codecs="vp9"'>
+      <source src="video/merry.mp4" type="video/mp4">
+      <source src="video/merry.ogv" type="video/ogg">
+      <br>
+      <br>
+      Sorry, your browser could not read the video; mp4, ogg and flv versions were made available.
+      <br>
+      <a href ="video/merry.mp4">Download the mp4 version</a> to play with another program.
+      <br>
+      <br>
+    </video>
+</div>
+<div class="piccap" style="width: 240px;">
 Courtship of an undescribed <i>Deroceras</i> species from Turkey.
 <br>
 <br>
 The video is playing at the natural rate (once fully downloaded); the rotation rate gradually declines over the 50 min courtship, but this video repeats after 80 s. During courtship the spoon-shaped sarcobelum of each slug merely rests on the partner's back; this is retracted before copulation when the rest of the penis everts rapidly to exchange sperm.
 <br><br>
 More slug-mating videos <a href="ss.htm">here</a> and <a href="../hutch/malta.htm">here</a>.
+</div>
+</div>
+
 
     </TD>
     <TD>
@@ -110,10 +148,11 @@ More slug-mating videos <a href="ss.htm">here</a> and <a href="../hutch/malta.ht
 
 <hr size = 4 width ="50%">
 
+<div class = "textboxwithimage">
+<div class = "floatingrightimage">
+    <IMG SRC="figs/sarc.jpg" ALT="[Photo of Deroceras mating]" WIDTH=266 HEIGHT=245>
+</div>
 
-<TABLE Width="100%">
-  <TR VALIGN="bottom">
-  <TD ALIGN="left">
 <h1><a NAME="contents"></a>Table of contents</h1>
 
 <ul>
@@ -153,14 +192,7 @@ The spread of <i>Arion vulgaris</i> and its hybridisation with <i>A. ater</i> s.
 <b><a href="#publications">PUBLICATION LIST</a></b></li>
 
 </ul>
-
-    </TD>
-    <TD ALIGN="right" WIDTH="270">
-      <IMG SRC="figs/sarc.jpg" ALT="[Photo of Deroceras mating]" WIDTH=266 HEIGHT=245>
-    </TD>
-  </TR>
-</TABLE>
-
+</div>
 
 <hr size = 4 width ="50%">
 
@@ -169,7 +201,7 @@ Details of selected research projects</h1>
 
 <h3>
 <a NAME="overview"></a><u>Overview</u></h3>
-I work mostly on terrestrial slugs. Part of the research is taxonomic, but I am particularly interested in the elaborate mating behaviour of these simultaneous hermaphrodites. Mating behaviour not only provides extra characters with which to establish species identity, but, because it is an isolating mechanism, may explain why some taxa are more speciose than others. We investigate the role of sexual selection and partner manipulation in explaining particular features of the mating behaviour and reproductive anatomy. Another aspect of my research has been genetic analysis, for instance to estimate outcrossing rates.
+I work mostly on terrestrial slugs. Part of the research is taxonomic, but I am particularly interested in the elaborate genitalia and mating behaviour of these simultaneous hermaphrodites. Mating behaviour not only provides extra characters with which to establish species identity, but, because it is an isolating mechanism, may explain why some taxa are more speciose than others. We investigate the role of sexual selection and partner manipulation in explaining particular features of the mating behaviour and reproductive anatomy. Another aspect of my research has been genetic analysis, for instance to estimate outcrossing rates.
 <p>
 Currently much of my time is taken up as an editor of the journal <a href="https://www.senckenberg.de/en/science/senckenberg-publications/scientific-journals/archiv-fuer-molluskenkunde/"><i>Archiv für Molluskenkunde</i></a>, the oldest continuously running malacological journal. <a href="#contents">Back to Contents</a>
 
@@ -177,22 +209,22 @@ Currently much of my time is taken up as an editor of the journal <a href="https
 <a NAME="mating"></a>
 <u>Mating behaviour of <i>Deroceras</i> slugs</u>&#151;with <a href="http://www.jkoene.dds.nl">Joris Koene</a>, Mandy Benke, Ines Schulze, Barbara J&#228;schke, Esther Carlitz, Stefanie Visser &amp; John Hutchinson
 </h3>
-<TABLE ALIGN="center">
-  <TR VALIGN=top>
-    <TD ALIGN="center" WIDTH="658">
+<div class="cenimgs">
+<div class="piccap">
       <IMG SRC="figs/mating.gif" ALT="[Figure of Deroceras mating sequence]" WIDTH=654 HEIGHT=225>
-    </TD>
-  </TR>
-</TABLE>
-<TABLE ALIGN="right">
-  <TR VALIGN=top>
-    <TD ALIGN="center" WIDTH="92">
-      <A HREF="figs/penialgland.htm"><IMG SRC="figs/penialgland3.gif" ALT="[Penial gland of Deroceras invadens]" WIDTH=88 HEIGHT=97>
-      <small>Click for enlargement and caption</small></A>
+</div>
+</div>
+
+<div class = "textboxwithimage">
+<div class = "floatingrightimage">
+<div class = "piccap">
+      <A HREF="figs/penialgland.htm">
+      <IMG SRC="figs/penialgland3.gif" ALT="[Penial gland of Deroceras invadens]" WIDTH=88 HEIGHT=97>
+      <span class = "caption" style="width: 88px;">Click to enlarge + caption</span>
       </A>
-    </TD>
-  </TR>
-</TABLE>
+</div>
+</div>
+
 <i>Deroceras</i> mating behaviour is long and elaborate, involving a prolonged courtship and then a more rapid mutual exchange of sperm between the extruded penises. A couple of videos available <a href="http://malacsoc.org.uk/malacological_bulletin/BULL43/king2.htm#dive">here</a> show some of the spectacular behaviour. Reise <A HREF="reisepub/amb2.htm">(2007)</a> reviews the interspecific diversity. Recently we have been focussing on the role of a penial gland that is everted over the back of the partner releasing a secretion. Since this occurs after sperm exchange, we suspect that its role is to manipulate the partner in some way (cf. the love darts of helicid snails). For instance, it might increase use of the donated sperm or hinder subsequent remating. A <a href="reisepub/sexconfl.pdf">poster</a> explains the idea, but since then experiments by a succession of M.Sc. students have tested some of these hypotheses.
 <p>
 Another approach that we are taking is to observe the mating behaviour of species in which particular parts of the penial morphology are unusually developed. For instance, Reise et al. <A HREF="reisepub/anbiol1.htm">(2007)
@@ -200,28 +232,26 @@ Another approach that we are taking is to observe the mating behaviour of specie
 <p>
 Another reason for examining mating behaviour is to provide extra characters for taxonomy. For example, by studying the mating behaviour of <i>Deroceras</i> collected in the S&#228chsische Schweiz, we have recognised that <i>D. rodnae</i> needs to be split into at least two species with very different courtship and copulation behaviours (<a href="ss.htm">link to paper and videos</a>). Another example is our discovery that the mating behaviour of the widespread pest species formerly known as <i>D. panormitanum</i> does not correspond to that of the species originally described under this name, prompting us to redescribe the pest species as <i>Deroceras invadens</i> (<a href="../hutch/malta.htm">link to videos</a>).
 <a href="#contents">Back to Contents</a>
+</div>
 
-<p>
-<TABLE ALIGN="right">
-  <TR VALIGN=top>
-    <TD ALIGN="left">
-<h3>
+<br>
 <a NAME="hybrid"></a>
+<div class = "textboxwithimage">
+<div class = "floatingrightimage">
+<div class = "piccap">
+      <A HREF="video/separation.htm">
+        <IMG SRC="figs/hybrid_spermatophores.jpg" ALT="[Interspecific spermatophore exchange]" WIDTH=141 HEIGHT=143>
+        <span class="caption" style="width: 141px;">Video: spermatophore exchange</span>
+      </A>
+</div>
+</div>
+
+<h3>
 <u>The spread of <i>Arion vulgaris</i> and its hybridisation with <i>A. ater</i> s.l.</u>&#151;with Edgars Dreijers, Anne-Katrin Schwarzer, Bettina Schlitt &amp; John Hutchinson
 </h3>
-We discovered the notoriously invasive and damaging slug Arion vulgaris in G&#246;rlitz in <a href="#bngo3">1994</a>. Regular sampling since then has shown it to have progressively replaced the native <i>A. ater</i> within the town. In the laboratory we have shown that the species will mate with each other and sometimes successfully exchange spermatophores, although at each successive stage of mating mixed couples more often failed to proceed further. Our <a href="#jms3">paper</a> compares the mating behaviour of each species in detail so to identify the difficulties of interspecific mating. While both species still coexisted we found morphological intermediates resulting from hybridisation. A <a href="#fom7">paper</a> describing their morphologies has also pointed out that local populations of <i>Arion ater</i> derive from three different subspecies recognisable both morphologically and genetically: <i>A. ater ater</i> from Northern Europe, <i>A. ater rufus</i> from the British Isles, and <i>A. ater ruber</i> from western continental Europe. Further results from field observations of mating behaviour and from genetics are awaiting publication. 
+We discovered the notoriously invasive and damaging slug <i>Arion vulgaris</i> in G&#246;rlitz in <a href="#bngo3">1994</a>. Regular sampling since then has shown it to have progressively replaced the native <i>A. ater</i> within the town. In the laboratory we have shown that the species will mate with each other and sometimes successfully exchange spermatophores, although at each successive stage of mating mixed couples more often failed to proceed further. Our <a href="#jms3">paper</a> compares the mating behaviour of each species in detail so to identify the difficulties of interspecific mating. While both species still coexisted we found morphological intermediates resulting from hybridisation. A <a href="#fom7">paper</a> describing their morphologies has also pointed out that our local populations of <i>Arion ater</i> derive from three different subspecies recognisable both morphologically and genetically: <i>A. ater ater</i> from Northern Europe, <i>A. ater rufus</i> from the British Isles, and <i>A. ater ruber</i> from western continental Europe. Further results from field observations of mating behaviour and from genetics are awaiting publication. 
 <a href="#contents">Back to Contents</a>
-<p> 
-<p>
-    </TD> 
-    <TD ALIGN="center" WIDTH="139">
-      <A HREF="video/separation.htm"><IMG SRC="figs/hybrid_spermatophores.jpg" ALT="[Interspecific spermatophore exchange]" WIDTH=141 HEIGHT=143>
-      <small>Video: spermatophore exchange</small></A>
-      </A>
-    </TD>
-  </TR>
-</TABLE>
-
+</div>
 
 <h3>
 <a NAME="fecundity"></a>
@@ -259,32 +289,30 @@ The latter species has considerable scope for becoming a pest, as does
 <A href="#veliger2"><i>Deroceras invadens</i></A>, 
 whose range we have considerably extended into the Eastern USA. Most recently we have surveyed a range of 
 synanthropic habitats in the Denver region of Colorado and the Salt Lake City region of Utah.
-<TABLE ALIGN="center">
-  <TR VALIGN=top>
-    <TD ALIGN="left" WIDTH="305">
-      <A HREF="figs/boet.htm"><IMG SRC="figs/boet3.jpg" ALT="[Photo of Boettgerilla pallens]"  WIDTH=300 HEIGHT=127">
-      <small><i>B. pallens</i>: click to enlarge + caption</small>
+<div class="cenimgs">
+<div class="piccap">
+      <A HREF="figs/boet.htm">
+      <IMG SRC="figs/boet3.jpg" ALT="[Photo of Boettgerilla pallens]"  WIDTH=300 HEIGHT=127">
+      <span class="caption"style="width: 300px;"><i>B. pallens</i>: click to enlarge + caption<p></span>
+      <a>
+      <A HREF="figs/pano.htm">
+      <IMG SRC="figs/pano3.jpg" ALT="[Photo of Deroceras invadens]" WIDTH=300 HEIGHT=77>
+      <span class="caption" style="width: 300px;"><i>D. invadens</i>: click to enlarge + caption</span>
       </A>
-    </TD>
-    <TD ALIGN="left" ROWSPAN=2 WIDTH="191">
-      <A HREF="figs/buda.htm"><IMG SRC="figs/buda3.jpg" ALT="[Photo of Tandonia budapestensis]" WIDTH=186 HEIGHT=200>
-      <small><i>T. budapestensis</i>: click to enlarge + caption</small>
+</div>
+<div class="piccap">
+      <A HREF="figs/buda.htm">
+      <IMG SRC="figs/buda3.jpg" ALT="[Photo of Tandonia budapestensis]" WIDTH=186 HEIGHT=200>
+      <span class="caption" style="width: 186px;"><i>T. budapestensis</i>: click to enlarge + caption</span>
       </A>
-    </TD>
-    <TD ALIGN="left" ROWSPAN=2 WIDTH="100">
-      <A HREF="figs/aego.htm"><IMG SRC="figs/aego3.jpg" ALT="[Photos of Aegopinella nitidula]" WIDTH=85 HEIGHT=215>
-      <small><br><i>A. nitidula</i>: click to enlarge</small>
+</div>
+<div class="piccap">
+      <A HREF="figs/aego.htm">
+      <IMG SRC="figs/aego3.jpg" ALT="[Photos of Aegopinella nitidula]" WIDTH=85 HEIGHT=215>
+      <span class="caption" style="width: 85px;"><i>A. nitidula</i>: click to enlarge</span>
       </A>
-    </TD>
-  </TR>
-  <TR VALIGN=top>
-    <TD ALIGN="left" WIDTH="305">
-      <A HREF="figs/pano.htm"><IMG SRC="figs/pano3.jpg" ALT="[Photo of Deroceras invadens]" WIDTH=300 HEIGHT=77>
-      <small><i>D. invadens</i>: click to enlarge + caption</small>
-      </A>
-    </TD>
-  </TR>
-</TABLE>
+</div>
+</div>
 In Europe, we have extended the range of the slug 
 <i>Deroceras turcicum</i>, initially to the <A href="#fom1">Czech Republic and Slovakia</A>, 
 and later to <A href="#fom2">Poland</A>. Our paper (<A href="#fom1">Reise &amp; Hutchinson, 2001</A>) 
@@ -293,19 +321,20 @@ also discusses its considerable range of morphological variation so as to facili
 I helped to write up recent discoveries in Romania of the pest slug <i>A. vulgaris</i>. <a href="#malb1">Our paper</a> reviews occurrences elsewhere in SE Europe. In contrast, collections by Turkish colleagues of similar looking slugs from Istanbul turned out to be an invasion of <a href="#fom6"><i>Arion ater</i> agg</a>.
 <a href="#contents">Back to Contents</a>
 
-<h3>
 <a NAME="allometry"></a>
+<div class = "textboxwithimage">
+<div class = "floatingrightimage">
+<div class = "piccap">
+      <A HREF="figs/arion_mate.htm">
+        <IMG SRC="figs/arion_mate3.jpg" ALT="[Photo of Arion rufus mating]" WIDTH=119 HEIGHT=159>
+        <span class="caption" style="width: 119px;">Click to enlarge + caption</span>
+      </A>
+</div>
+</div> 
+
+<h3>
 <u>Allometry of genitalia size in <i>Arion</i> slugs</u>&#151;with John Hutchinson
 </h3>
-<TABLE ALIGN="right">
-  <TR VALIGN=top>
-    <TD ALIGN="center" WIDTH="123">
-      <A HREF="figs/arion_mate.htm"><IMG SRC="figs/arion_mate3.jpg" ALT="[Photo of Arion rufus mating]" WIDTH=119 HEIGHT=159>
-      <small>Click to enlarge + caption</small></A> 
-      </A>
-    </TD>
-  </TR>
-</TABLE>
 Arion slugs are hermaphrodites with a long courtship finishing with reciprocal exchange of freshly manufactured spermatophores via everted genitalia. 
 Is size of the distal genitalia (parts involved in spermatophore manufacture, exchange and digestion, and sometimes stroking the partner) sexually selected: 
 i.e. do large individuals invest in relatively large genitalia to increase mating success? 
@@ -319,7 +348,7 @@ The two almost obligate selfing species have relatively smaller genitalia than s
 <p>
 We have since measured allometry of various components of the reproductive system of the terrestrial snail <i>Helix pomatia</i> and the freshwater basommatophorans <i>Stagnicola corvus</i> and <i>Stagnicola turricula</i>. This was in collaboration with Bartek Go&#322;dyn and Tereza Ko&#345;&#237;nkov&#225;.
 <a href="#contents">Back to Contents</a>
-
+</div>
 
 <h3>
 <a NAME="sinistral">
@@ -639,28 +668,26 @@ Deutschland). <i>Berichte der Naturforschenden Gesellschaft der Oberlausitz</i> 
 <br>
 
 <a NAME="portraits"></a>
-<TABLE ALIGN="center" WIDTH="790">
-  <TR VALIGN=top>
-    <TD ALIGN="center" WIDTH="291">
+
+<div class="cenimgs">
+<div class="piccap">
       <IMG SRC="figs/searching_oeland2019.jpg" ALT="[Heike snail hunting, &#214;land, 2019]" WIDTH=291 HEIGHT=388>
-      <br>Snail hunting, &#214;land, 2019
-    </TD>
-    <TD WIDTH="5"></TD>
-    <TD ALIGN="center" WIDTH="494">
+      <span class="caption">Snail hunting, &#214;land, 2019</span>
+</div>
+<div class="piccap">
       <IMG SRC="figs/heike_mic.jpg" ALT="[Heike dissecting Deroceras in Mala Fatra]" WIDTH=494 HEIGHT=388>
-      <br>Identifying <i>Deroceras</i> by dissection in the field (Mala Fatra, Slovakia)
-    </TD>
-  </TR>
-</TABLE>
+      <span class="caption">Identifying <i>Deroceras</i> by dissection in the field (Mala Fatra, Slovakia)</span>
+</div>
+</div>
+
+<div class="cenimgs">
+<div class="piccap">
+    <IMG SRC="figs/zoo.jpg" ALT="[Heike teaching at Goerlitz Zoo]" WIDTH=519 HEIGHT=396>
+    <span class="caption" style="width: 519px;">Running an introductory course on non-marine molluscs at G&#246;rlitz Zoo (&#169; Axel Gebauer)</span>
+</div>
+</div>
+
 <br>
-<TABLE ALIGN="center">
-  <TR VALIGN=top>
-    <TD ALIGN="center" WIDTH="519">
-      <IMG SRC="figs/zoo.jpg" ALT="[Heike teaching at Goerlitz Zoo]" WIDTH=519 HEIGHT=396>
-      <br>Running an introductory course on non-marine molluscs at G&#246;rlitz Zoo (&#169; Axel Gebauer)
-    </TD>
-  </TR>
-</TABLE>
 <a href="#contents">Back to Contents</a>
 
 
